@@ -2,7 +2,7 @@
 set -e # Exit immediately if a command exits with a non-zero status.
 
 # 1. Set the Date
-CURRENT_DATE=$(date +%F)
+CURRENT_DATE=$(date +%F-%H-%M-%S)
 ARTICLE_PATH="src/content/blog/${CURRENT_DATE}.md"
 
 echo "Creating article for ${CURRENT_DATE}"
